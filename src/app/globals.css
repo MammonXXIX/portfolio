@@ -1,26 +1,34 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  @font-face {
+    font-family: "marlin-geo-sq-light";
+    src: url("/fonts/MarlinGeoSQ-Light.woff2") format("woff2");
+  }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  @font-face {
+    font-family: "marlin-geo-sq-regular";
+    src: url("/fonts/MarlinGeoSQ-Regular.woff2") format("woff2");
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  @font-face {
+    font-family: "marlin-geo-sq-medium";
+    src: url("/fonts/MarlinGeoSQ-Medium.woff2") format("woff2");
   }
 }
 
+@theme inline {
+  --font-marlin-geo-sq-light: "marlin-geo-sq-light", sans-serif;
+  --font-marlin-geo-sq-regular: "marlin-geo-sq-regular", sans-serif;
+  --font-marlin-geo-sq-medium: "marlin-geo-sq-medium", sans-serif;
+
+  --color-red: #F00000
+}
+
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  width: 100dvw;
+  background-color: var(--color-white);
+  font-family: "marlin-geo-sq-regular", sans-serif;
+  overflow-x: hidden;
 }
