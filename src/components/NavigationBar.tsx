@@ -21,19 +21,19 @@ const NavigationBar = () => {
         } else {
             setIsVisible(true);
         }
-
-        console.log(isVisible);
     }, [y]);
 
     return (
-        <div className="fixed z-50 flex w-full items-center justify-between p-2">
-            <h1 className={`${!isVisible ? 'text-black' : 'text-white'} font-marlin-geo-sq-medium text-4xl`}>PORTFOLIO</h1>
+        <div className="fixed z-50 flex w-full items-center justify-between overflow-x-hidden p-2">
+            <h1 className={`${!isVisible ? 'text-black' : 'text-white'} font-marlin-geo-sq-medium hidden text-2xl md:block md:text-4xl`}>
+                PORTFOLIO
+            </h1>
             <div className={`${!isVisible ? 'text-black' : 'text-white'} font-marlin-geo-sq-light flex items-center text-xs`}>
                 <span className="mr-2 inline-block h-4 w-4 rounded-full bg-red-500" />
                 <span>OPEN TO WORK</span>
                 <span className="ms-10 uppercase">Tangerang, Indonesia</span>
             </div>
-            <div>
+            <div className="hidden md:block">
                 {NAVIGATION_ITEMS.map(({ label, path }, index) => (
                     <a
                         key={index}

@@ -38,7 +38,7 @@ const Home = () => {
     }, []);
 
     return (
-        <div ref={mainContainer} className="relative min-h-dvh">
+        <div ref={mainContainer} className="relative min-h-dvh min-w-dvw overflow-x-hidden">
             <video src="videos/001.mp4" autoPlay muted loop className="fixed h-screen w-screen object-cover" />
             <span
                 ref={cursorElement}
