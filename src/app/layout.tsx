@@ -6,8 +6,8 @@ import Footer from '@/components/Footer';
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
-        <html lang="en">
-            <body className={`antialiased`}>
+        <html>
+            <body>
                 <NavigationBar />
                 {children}
                 <Footer />

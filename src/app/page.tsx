@@ -2,6 +2,7 @@
 
 import About from '@/components/About';
 import Hero from '@/components/Hero';
+import Loading from '@/components/Loading';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';

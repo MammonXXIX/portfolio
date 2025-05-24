@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { useWindowScroll } from 'react-use';
 
-const NAVIGATION_ITEMS = [
+export const NAVIGATION_ITEMS = [
     { label: 'Home', path: '/' },
     { label: 'Work', path: '/work' },
 ];

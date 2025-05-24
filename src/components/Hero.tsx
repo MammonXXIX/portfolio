@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import Loading from './Loading';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -32,8 +33,9 @@ const Hero = () => {
 
     return (
         <div className="z-50 h-[200dvh] w-screen">
-            <div ref={mainContainer} className="relative z-40 flex h-screen items-end">
-                <Image src="svg/logo.svg" alt="logo" width={0} height={0} className="z-40 w-screen px-10" />
+            <div ref={mainContainer} className="relative z-40 flex max-h-screen min-h-screen items-end">
+                <Loading />
+                <Image src="svg/logo.svg" alt="logo" width={0} height={0} className="z-40 min-w-screen px-10" />
                 <div className="bg-red absolute inset-0 opacity-50" />
             </div>
         </div>
