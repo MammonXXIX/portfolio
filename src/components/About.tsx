@@ -91,7 +91,7 @@ const About = () => {
                     </p>
                 </div>
             </div>
-            <div ref={educationContainer} className="absolute top-150 flex h-screen w-screen flex-col items-end bg-gray-300 p-8">
+            <div ref={educationContainer} className="absolute top-150 flex h-screen w-screen flex-col items-end bg-gray-200/90 p-8">
                 <span className="text-xs uppercase">/ education</span>
                 <h1 className="font-marlin-geo-sq-medium text-5xl md:text-9xl">My Education</h1>
                 <div className="mt-6 flex max-w-5xl flex-col items-end gap-4">
@@ -107,7 +107,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div ref={workContainer} className="absolute top-225 flex h-[70dvh] w-screen flex-col items-end bg-gray-400 px-12 py-8">
+            <div ref={workContainer} className="absolute top-225 flex h-[70dvh] w-screen flex-col items-end bg-gray-300 px-12 py-8">
                 <span className="text-xs uppercase">/ work</span>
                 <h1 className="font-marlin-geo-sq-medium text-5xl md:text-9xl">My Work</h1>
                 <div className="mt-6 flex max-w-5xl flex-col items-end gap-4"></div>

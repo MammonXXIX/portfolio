@@ -43,7 +43,7 @@ const Home = () => {
             <video src="videos/001.mp4" autoPlay muted loop className="fixed h-screen w-screen object-cover" />
             <span
                 ref={cursorElement}
-                className="font-marlin-geo-sq-light absolute top-0 left-0 z-50 cursor-default text-sm text-white uppercase mix-blend-difference"
+                className="font-marlin-geo-sq-light absolute top-0 left-0 z-50 hidden cursor-default text-sm text-white uppercase mix-blend-difference md:block"
             >
                 scroll to explore
             </span>

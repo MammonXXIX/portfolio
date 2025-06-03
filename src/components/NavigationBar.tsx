@@ -6,7 +6,7 @@ import { useWindowScroll } from 'react-use';
 
 export const NAVIGATION_ITEMS = [
     { label: 'Home', path: '/' },
-    { label: 'Work', path: '/work' },
+    { label: 'Work', path: 'https://github.com/MammonXXIX' },
 ];
 
 const NavigationBar = () => {
@@ -25,8 +25,8 @@ const NavigationBar = () => {
 
     return (
         <div className="fixed z-50 flex w-full items-center justify-between overflow-x-hidden p-2">
-            <h1 className={`${!isVisible ? 'text-black' : 'text-white'} font-marlin-geo-sq-medium hidden text-2xl md:block md:text-4xl`}>
-                PORTFOLIO
+            <h1 className={`${!isVisible ? 'text-black' : 'text-white'} font-marlin-geo-sq-medium hidden text-2xl md:block md:text-2xl`}>
+                CRAFTED BY MAMMON
             </h1>
             <div className={`${!isVisible ? 'text-black' : 'text-white'} font-marlin-geo-sq-light flex items-center text-xs`}>
                 <span className="mr-2 inline-block h-4 w-4 rounded-full bg-red-500" />
@@ -42,7 +42,9 @@ const NavigationBar = () => {
                     >
                         {pathname === path && <span className="mr-2 inline-block h-4 w-4 rounded-full bg-red-500" />}
                         {label}
-                        {index !== NAVIGATION_ITEMS.length - 1 && <span className="mx-1 text-white"> / </span>}
+                        {index !== NAVIGATION_ITEMS.length - 1 && (
+                            <span className={`${!isVisible ? 'text-black' : 'text-white'} mx-1`}> / </span>
+                        )}
                     </a>
                 ))}
             </div>
