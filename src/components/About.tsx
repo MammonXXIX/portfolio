@@ -1,11 +1,10 @@
 'use client';
 
-import { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
-import { ScrollTrigger } from 'gsap/all';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
 import Link from 'next/link';
-import { FaArrowRight } from 'react-icons/fa';
+import { useRef } from 'react';
 import { IoIosArrowRoundForward } from 'react-icons/io';
 
 gsap.registerPlugin(ScrollTrigger);
